@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 100%;
+}
+
+.top-bar {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-links {
+    font-size: 14px;
+}
+
+.top-links a {
+    color: white;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.nav-container {
+    background-color: #111;
+    padding: 15px 0;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu li a {
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    border-bottom: 2px solid #ff0000;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box input {
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-box button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icons i {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+.carousel-container input {
+    display: none;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: auto;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+.nav-dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-dot:hover {
+    background-color: #ff0000;
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.product-items {
+    display: inline-block;
+    width: 30%;
+    margin: 15px 0;
+}
+
+.product-items img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+}
+
+.product-items a {
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.product-items a:hover {
+    background-color: #ff0000;
+}
+
+#product_1, #product_3 {
+    margin-top: 30px;
+}
+
+#product_2, #Product_4, #Product_5 {
+    background-color: #111;
+    padding: 40px 0;
+}
+
+#product_2 h2, #Product_4 h1, #Product_5 h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+}
+
+.item {
+    min-width: 300px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+#youtube vid iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    margin: 30px 0;
+}
+
+#Salman Khan img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    padding: 40px;
+    background-color: #111;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.email-signup input {
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+}
+
+.email-signup button {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid gray;
+    padding-top: 20px;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 1200px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .carousel-container {
+        display: block;
+    }
+
+    .product-items {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+    }
+
+   /* #Salman Khan img {
+        width: 100%;
+        height: auto;
+    }*/
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .product-items {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .carousel-container {
+        display: block;
+        width: 100%;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-column ul li a {
+        font-size: 14px;
+    }
+
+   /* #Salman Khan img {
+        width: 100%;
+        height: auto;
+    }*/
+}
+
+@media only screen and (max-width: 480px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .menu li a {
+        font-size: 14px;
+    }
+
+    .search-box input {
+        width: 150px;
+    }
+
+    .footer-column h3 {
+        font-size: 18px;
+    }
+
+    .footer-column ul li a {
+        font-size: 12px;
+    }
+
+    .product-items {
+        width: 100%;
+    }
+
+    .carousel-container {
+        display: block;
+        width: 100%;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+   /* #Salman Khan img {
+        width: 100%;
+        height: auto;
+    }*/
+
+}
